@@ -16,7 +16,7 @@ Following are the salient features of the Application
         <br/>
     - Uses the function component 
         <br/>
-    - Uses React Context to share the data 
+    - Uses React Redux to share the data 
         <br/>
     - Uses Type Script
         <br/>
