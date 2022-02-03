@@ -1,4 +1,4 @@
-# crewmeister
+# Crewmeister
 
 This is the Front End Application for the assignment for the CrewMeister. This is an employee-absence dashboard with following Features
         <br/>
