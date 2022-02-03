@@ -30,7 +30,7 @@ Below are the external dependencies
     - React-icons for icons
 
 **Note**
-    - Supporting Api is to be run on port 4000
+    - Supporting Api is to be run on port 3100
     - This appication is best run with the supporting mock api set up
 ## Available Scripts
 
