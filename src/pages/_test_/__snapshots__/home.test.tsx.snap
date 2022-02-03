@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Componenet Page matches snapshot 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="home-table"
+  >
+    <div
+      className="employee-header"
+    >
+      <div>
+        Employee
+      </div>
+      <div>
+        <button
+          className="employee-submit"
+          onClick={[Function]}
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+    <div
+      className="employee-container"
+    >
+      <div
+        className="employee-row"
+      >
+        <div
+          className="employee-label"
+        >
+          First Name
+        </div>
+        <div>
+          <input
+            className="employee-input"
+            id="firstName"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        className="employee-row"
+      >
+        <div
+          className="employee-label"
+        >
+          Last Name
+        </div>
+        <div>
+          <input
+            className="employee-input"
+            id="lastName"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        className="employee-row"
+      >
+        <div
+          className="employee-label"
+        >
+           Email: 
+        </div>
+        <div>
+          <input
+            className="employee-input"
+            id="email"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        className="employee-row"
+      >
+        <div
+          className="employee-label"
+        >
+          Gender
+        </div>
+        <div>
+          <input
+            className="employee-input"
+            id="gender"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[` Home Page matches snapshot 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="home-search"
+  >
+    <div
+      className="search"
+    >
+      <div>
+        <input
+          className="search-input"
+          name="search"
+          onChange={[Function]}
+          placeholder="Search"
+          type="text"
+        />
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+          />
+        </svg>
+      </div>
+      <div>
+        <a
+          href="/create"
+          onClick={[Function]}
+        >
+          <span>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </span>
+          <span>
+            Add employee
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="home-table"
+    id="employee-table"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Id
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Email
+          </th>
+          <th>
+            Gender
+          </th>
+          <th>
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        id="employee-table-body"
+      />
+    </table>
+  </div>
+</div>
+`;
