@@ -3,7 +3,7 @@ import {IAbsence} from "../../models/absences";
 
 export interface AbsenceS  {
   absences:Array<IAbsence> ,
-  isFetching: boolean,
+  isAbsenteesFetching: boolean,
   isError: boolean,
   isAbsenteeDataAvailable: boolean
 
@@ -11,7 +11,7 @@ export interface AbsenceS  {
 
 const initialState: AbsenceS = {
     absences: [],
-    isFetching:false,
+    isAbsenteesFetching:false,
     isError: false,
     isAbsenteeDataAvailable:false
 }
@@ -21,16 +21,16 @@ export const Absence = createSlice({
   initialState,
   reducers: {
       requestAbsence(state) {
-        state.isFetching = true
+        state.isAbsenteesFetching = true
       },
       loadAbsence(state, action:PayloadAction<IAbsence[]>){
-          state.isFetching = false;
+          state.isAbsenteesFetching = false;
           state.isError = false;
           state.absences = action.payload;
           state.isAbsenteeDataAvailable = true;
       },
       failureAbsence(state){
-        state.isFetching = false;
+        state.isAbsenteesFetching = false;
         state.isError = true;
       },
       // setAbsenteeDataAvailableStatus(state, action:PayloadAction<boolean>){

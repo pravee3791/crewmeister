@@ -3,14 +3,14 @@ import {IMember} from "../../models/member";
 
 export interface MemberS  {
   members:Array<IMember> ,
-  isFetching: boolean,
+  isMemberFetching: boolean,
   isError: boolean,
   isMemberDataAvailable: boolean
 }
 
 const initialState: MemberS = {
     members: [],
-    isFetching:false,
+    isMemberFetching:false,
     isError: false,
     isMemberDataAvailable: false
 }
@@ -20,16 +20,16 @@ export const Member = createSlice({
   initialState,
   reducers: {
       requestMembers(state) {
-        state.isFetching = true
+        state.isMemberFetching = true
       },
       loadMembers(state, action:PayloadAction<IMember[]>){
-          state.isFetching = false;
+          state.isMemberFetching = false;
           state.isError = false;
           state.members = action.payload;
           state.isMemberDataAvailable = true;
       },
       failureMembers(state){
-        state.isFetching = false;
+        state.isMemberFetching = false;
         state.isError = true;
       },
    

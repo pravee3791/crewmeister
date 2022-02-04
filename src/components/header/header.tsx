@@ -1,6 +1,6 @@
 /**
  * 
- * @returns Simple Header with Work Motion Logo
+ * @returns Simple Header with CrewMiester Logo
  */
 function Header(){
     return(

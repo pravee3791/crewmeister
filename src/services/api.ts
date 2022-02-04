@@ -2,6 +2,9 @@ import axios from "axios";
 import { URLENDPOINT } from "../constants/constants";
 
 
+/**
+ * Singleton Employee Class to get employee data from the api code
+ */
 class EmployeeService {
     private static instance: EmployeeService;
     static getInstance() {
