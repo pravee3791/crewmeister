@@ -28,6 +28,7 @@ Following are the salient features of the Application
 
 Below are the external dependencies
     - React-icons for icons
+    - React- Loader for loader component
 
 **Note**
     - Supporting Api is to be run on port 3100
