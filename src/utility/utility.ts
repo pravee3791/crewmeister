@@ -1,4 +1,3 @@
-import { profileEnd } from "console";
 
 export const mergedArrayOfObjects = (a1: Array<any>, a2: Array<any>, id: any) => {
 

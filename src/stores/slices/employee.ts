@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import {IEmployee} from "../../models/employee";
-import {sortObjectByProperty  } from "../../utility/utility";
 
 export interface EmployeeS  {
   employees:Array<IEmployee> ,

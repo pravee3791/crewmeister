@@ -152,7 +152,9 @@ function Home() {
                                         </tr>
                                     </thead>
                                     <tbody id='employee-table-body'>
-                                        {displayEmployeeList.map((emp: IEmployee, index) => {
+
+                                        {employees.length > 0 ? 
+                                        displayEmployeeList.map((emp: IEmployee, index) => {
                                             return (
                                                 <tr key={index}>
                                                     <td>{emp.id}</td>
@@ -169,7 +171,9 @@ function Home() {
                                                     <td>{emp.admitterNote}</td>
                                                 </tr>
                                             )
-                                        })}
+                                        })
+                                        :<div>No Employess Found</div>
+                                    }
                                     </tbody>
 
                                 </table>
